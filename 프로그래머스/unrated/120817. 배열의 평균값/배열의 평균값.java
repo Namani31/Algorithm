@@ -8,6 +8,7 @@ class Solution {
             sum += loop;
         }
 
+        // sum이 int이므로 double로 형변환을 해줘야 answer에 sum 값을 담을 수 있습니다.
         double answer = (double) sum / numbers.length;
         return answer;
     }
