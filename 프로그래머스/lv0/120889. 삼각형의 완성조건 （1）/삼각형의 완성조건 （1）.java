@@ -4,11 +4,10 @@ import java.util.*;
 class Solution {
     public int solution(int[] sides) {
         int answer = 0;
-        int[] triangel = sides;
 
-        Arrays.sort(triangel);
+        Arrays.sort(sides);
 
-        if (triangel[triangel.length - 1] < triangel[0] + triangel[1])
+        if (sides[sides.length - 1] < sides[0] + sides[1])
             return answer = 1;
         else
             return answer = 2;
