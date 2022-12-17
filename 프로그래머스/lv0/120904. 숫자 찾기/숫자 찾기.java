@@ -2,13 +2,10 @@ import java.util.*;
 
 class Solution {
     public int solution(int num, int k) {
-        String numToString = Integer.toString(num);
-        String stringK = Integer.toString(k);
+        String numToStr = String.valueOf(num);
+        String kToStr = String.valueOf(k);
 
-        if (numToString.indexOf(stringK) == -1) {
-            return -1;
-        } else {
-            return numToString.indexOf(stringK) + 1;
-        }
+        int answer = numToStr.indexOf(kToStr);
+        return answer < 0 ? -1 : answer + 1 ;
     }
 }
