@@ -4,14 +4,15 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numA = sc.nextInt();
-        int numB = sc.nextInt();
+        long numA = sc.nextLong();
+        long numB = sc.nextLong();
+        sc.close();
         
         System.out.println(calculator(numA, numB));
     }
     
-    public static int calculator(int numA, int numB) {
-        int result = (numA + numB) * (numA - numB);
+    public static long calculator(long numA, long numB) {
+        long result = (numA + numB) * (numA - numB);
         return result;
     }
 }
