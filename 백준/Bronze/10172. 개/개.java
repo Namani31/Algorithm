@@ -4,6 +4,6 @@ public class Main {
         System.out.println("|q p|   /}");
         System.out.println("( 0 )\"\"\"\\");
         System.out.println("|\"^\"`    |");
-        System.out.print("||_/=\\\\__|");
+        System.out.println("||_/=\\\\__|");
     }
 }
